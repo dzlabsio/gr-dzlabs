@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<block>
+    <name>beef</name>
+    <key>dead_beef</key>
+    <category>[dead]</category>
+    <import>import dead</import>
+    <make>dead.beef($arg0, $arg1, $arg2)</make>
+
+
+
+    <param>
+        <name>Integer Argument</name>
+        <key>arg0</key>
+        <type>int</type>
+    </param>
+
+    <param>
+        <name>String Argument</name>
+        <key>arg1</key>
+        <type>string</type>
+    </param>
+
+    <param>
+        <name>Bool Argument</name>
+        <key>arg2</key>
+        <type>int</type>
+        <option>
+            <name>Yes</name>
+            <key>True</key>
+        </option>
+        <option>
+            <name>No</name>
+            <key>False</key>
+        </option>
+    </param>
+
+
+
+    <sink>
+        <name>in</name>
+        <type>message</type>
+        <optional>0</optional>
+    </sink>
+
+    <source>
+        <name>out</name>
+        <type>message</type>
+        <optional>1</optional>
+    </source>
+
+
+
+</block>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<block>
+    <name>udp_sink</name>
+    <key>dzlabs_udp_sink</key>
+    <category>[dzlabs]</category>
+    <import>import dzlabs</import>
+    <make>dzlabs.udp_sink($host, $port)</make>
+
+
+
+    <param>
+        <name>Host</name>
+        <key>host</key>
+        <type>string</type>
+    </param>
+
+    <param>
+        <name>Port</name>
+        <key>port</key>
+        <type>string</type>
+    </param>
+
+
+
+    <sink>
+        <name>in</name>
+        <type>message</type>
+        <optional>0</optional>
+    </sink>
+
+
+
+</block>

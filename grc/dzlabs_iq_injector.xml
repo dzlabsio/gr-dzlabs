@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<block>
+    <name>iq_injector</name>
+    <key>dzlabs_iq_injector</key>
+    <category>[dzlabs]</category>
+    <import>import dzlabs</import>
+    <make>dzlabs.iq_injector($burst_len, $burst_interval, $stream_sample_rate)</make>
+
+    <param>
+        <name>Burst Length Samples</name>
+        <key>burst_len</key>
+        <type>int</type>
+    </param>
+
+    <param>
+        <name>Burst Interval Seconds</name>
+        <key>burst_interval</key>
+        <type>float</type>
+    </param>
+
+    <param>
+        <name>Stream Sample Rate</name>
+        <key>stream_sample_rate</key>
+        <type>float</type>
+    </param>
+
+    <sink>
+        <name>in</name>
+        <type>message</type>
+        <optional>0</optional>
+    </sink>
+
+    <source>
+        <name>out</name>
+        <type>complex</type>
+    </source>
+
+</block>
